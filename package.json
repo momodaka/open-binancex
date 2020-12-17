@@ -1,15 +1,13 @@
 {
   "name": "open-binancex",
-  "description": "Secure Smart Contract library",
+  "description": "Reuseable BEP20 Token contract",
   "version": "3.3.0",
   "files": [
     "/contracts/**/*.sol",
     "/build/contracts/*.json"
   ],
   "scripts": {
-    "compile": "buidler compile",
-    "coverage": "buidler coverage",
-    "test": "buidler test"
+    "test": "truffle test"
   },
   "keywords": [
     "solidity",

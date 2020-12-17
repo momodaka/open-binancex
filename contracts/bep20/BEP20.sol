@@ -22,7 +22,7 @@ contract BEP20 is Context, IBEP20 {
     string private _name;
     string private _symbol;
     uint8 private _decimals;
-    address private _owner;
+    address public _owner;
 
     /**
      * @dev Sets the values for {name}, and {symbol} and {decimals}

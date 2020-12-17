@@ -1,6 +1,6 @@
 # open-binancex
 
-reuseable BEP20 Token contract
+Reuseable BEP20 Token contract
 
 ## base
 BEP20.sol

@@ -13,15 +13,6 @@ import "./BEP20.sol";
 abstract contract BEP20OwnerTransferable is Context, BEP20 {
     
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
-    address private _owner;
-
-    /**
-     * override
-     * @dev Returns the bep token owner.
-     */
-    function getOwner() public view virtual override returns (address){
-      return _owner;
-    }
 
     /**
      * @dev Throws if called by any account other than the owner.
