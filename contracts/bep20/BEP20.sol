@@ -25,10 +25,7 @@ contract BEP20 is Context, IBEP20 {
     address private _owner;
 
     /**
-     * @dev Sets the values for {name} and {symbol}, initializes {decimals} with
-     * a default value of 18.
-     *
-     * To select a different value for {decimals}, use {_setupDecimals}.
+     * @dev Sets the values for {name}, and {symbol} and {decimals}
      *
      * All three of these values are immutable: they can only be set once during
      * construction.
@@ -70,9 +67,6 @@ contract BEP20 is Context, IBEP20 {
      * For example, if `decimals` equals `2`, a balance of `505` tokens should
      * be displayed to a user as `5,05` (`505 / 10 ** 2`).
      *
-     * Tokens usually opt for a value of 18, imitating the relationship between
-     * Ether and Wei. This is the value {BEP20} uses, unless {_setupDecimals} is
-     * called.
      *
      * NOTE: This information is only used for _display_ purposes: it in
      * no way affects any of the arithmetic of the contract, including
@@ -267,17 +261,6 @@ contract BEP20 is Context, IBEP20 {
 
         _allowances[owner][spender] = amount;
         emit Approval(owner, spender, amount);
-    }
-
-    /**
-     * @dev Sets {decimals} to a value other than the default one of 18.
-     *
-     * WARNING: This function should only be called from the constructor. Most
-     * applications that interact with token contracts will not expect
-     * {decimals} to ever change, and may work incorrectly if it does.
-     */
-    function _setupDecimals(uint8 decimals_) internal {
-        _decimals = decimals_;
     }
 
     /**
