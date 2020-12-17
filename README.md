@@ -16,11 +16,14 @@ contract TestToken is BEP20 {
 ## Extensions
 
 BEP20Burnable.sol
+
 BEP20OwnerTransferable.sol
+
 ERC20Pausable.sol
 
+
 ```solidity
-contract MyToken is BEP20, BEP20OwnerTransferable {
+contract MyToken is BEP20, BEP20OwnerTransferable, BEP20Burnable {
     constructor (string memory name, string memory symbol)
         BEP20(name, symbol, 18)
         public
