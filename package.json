@@ -1,0 +1,26 @@
+{
+  "name": "open-binancex",
+  "description": "Secure Smart Contract library",
+  "version": "3.3.0",
+  "files": [
+    "/contracts/**/*.sol",
+    "/build/contracts/*.json"
+  ],
+  "scripts": {
+    "compile": "buidler compile",
+    "coverage": "buidler coverage",
+    "test": "buidler test"
+  },
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "smart",
+    "contracts",
+    "security",
+    "zeppelin"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.3.0"
+  }
+}
