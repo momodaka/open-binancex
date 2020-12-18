@@ -22,6 +22,6 @@ abstract contract BEP20Pausable is BEP20, Pausable {
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual override {
         super._beforeTokenTransfer(from, to, amount);
 
-        require(!paused(), "ERC20Pausable: token transfer while paused");
+        require(!paused(), "BEP20Pausable: token transfer while paused");
     }
 }
